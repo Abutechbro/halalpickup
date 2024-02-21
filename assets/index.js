@@ -1,3 +1,21 @@
+// copy to clipboard
+function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("myInput");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  alert("Copied the text: " + copyText.value);
+}
+
+
+
 function clearAll() {
     const memeContainer = document.querySelector('.meme-content');
     const jokeContainer = document.querySelector('.joke-content');
@@ -137,7 +155,7 @@ function clearAll() {
   
   // source: https://www.goodreads.com/quotes/tag/programming
   const quotes = [
-    { quote: 'Are you Aisha? Because you are enteringmy eyes sha😎 '},
+    { quote: 'Are you Aisha? Because you are entering my eyes sha😎 '},
     { quote: 'We are asked to lower our gaze but when I look down I found my kids jannah at feet' },
     { quote: 'Are you Isha? because my day does not seems to end without you.' },
     { quote: 'Is your heart wudu, Because I never want to break it' },
