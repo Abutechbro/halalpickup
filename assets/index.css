@@ -1,7 +1,10 @@
 
 
 .body{
-    background-color: black;
+    background: url('image/love2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .fixed{
@@ -138,7 +141,7 @@ nav{
     margin-top: 10px;
     margin-bottom: 10px;
     height: 35px;
-    border: 1px solid #FFC107;
+    border: 1px solid rgb(95, 20, 235);
     background: transparent;
     font-family:'Montserrat', sans-serif;
     color: white;
